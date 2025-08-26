@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureX</title>
+    <link rel="icon" type="image/x-icon" href="assets/fcon.png">
+
+
+    <!-- tailwind cdn -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+     <!-- fontawesome cdn --> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Animation cdn -->
+       <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body class="h-[200vh] bg-[#f4f5f7]">
+    <nav class="w-[400px] h-[84px] mx-auto flex justify-between items-center bg-white p-6 border-b border-gray-300">
+        <img class="w-[60px] h-[15px]" src="assets/secure.png">
+        <div>
+            <h1 class="font-extrabold text-l">TK <span>10000</span></h1>
+            <p>Available Balance</p>
+        </div>
+        <button class="btn w-[85px]"><i class="fa-solid fa-right-from-bracket rotate-180"></i>Logout</button>
+
+    </nav>
+    
+<div class="w-[410px] mx-auto mt-6 p-5">
+    <h1 class="animate__animated animate__bounce  text-2xl font-bold">Welcome to SecureX!</h1>
+    <p>Enjoy easy and convenient financial services with us. Cashout charge is low and fast </p>
+</div>
+
+<main class="w-[370px] mx-auto grid grid-cols-3 gap-2 p-2 bg-white rounded-2xl shadow">
+<div id="admony" class="w-[115px] h-[90px] flex flex-col items-center justify-center border-2 border-gray-400 rounded-2xl">
+    <img src="assets/wallet1.png">
+    <p>Add Money</p>
+</div>
+
+<div class="w-[115px] h-[90px] flex flex-col items-center justify-center border-2 border-gray-400 rounded-2xl">
+    <img src="assets/send1.png">
+    <p>Cashout</p>
+</div>
+
+<div class="w-[115px] h-[90px] flex flex-col items-center justify-center border-2 border-gray-400 rounded-2xl">
+    <img src="assets/money1.png">
+    <p>Transfer<br> Money</p>
+</div>
+
+<div class="w-[115px] h-[90px] flex flex-col items-center justify-center border-2 border-gray-400 rounded-2xl">
+    <img src="assets/bonus1.png">
+    <p>Get Bonus</p>
+</div>
+
+<div class="w-[115px] h-[90px] flex flex-col items-center justify-center border-2 border-gray-400 rounded-2xl">
+    <img src="assets/purse1.png">
+    <p>Pay Bill</p>
+</div>
+
+<div class="w-[115px] h-[90px] flex flex-col items-center justify-center border-2 border-gray-400 rounded-2xl">
+    <img src="assets/transaction1.png">
+    <p>Transactions</p>
+</div>
+</main>
+
+<!-- Toggle Start from here -->
+
+<!-- Latest Payment -->
+<section id="history">
+    <div class="w-[420px] h-[40px] mx-auto mt-5 flex justify-between items-center p-5"> 
+    <h1 class="font-bold text-xl">Payment History</h1>
+    <p class="text-[#44bd32]">View All</p>
+</div>
+    
+<div class="w-[420px] h-[70px] bg-white mx-auto rounded-2xl flex items-center justify-between p-4">
+
+    <div class="flex gap-3 items-center p-2">
+        <img class="w-[20px] h-[20px]" src="assets/wallet1.png">
+
+    <div><h1 class="font-bold">Electricity Bill</h1>
+    <p>Today 10:15AM</p></div>
+
+    </div>
+
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+</div>
+
+<div class="w-[420px] h-[70px] bg-white mx-auto rounded-2xl flex items-center justify-between p-4 mt-2">
+
+    <div class="flex gap-3 items-center p-2">
+        <img class="w-[20px] h-[20px]" src="assets/wallet1.png">
+
+    <div><h1 class="font-bold">WASA Bill</h1>
+    <p>Yesterday 12:15PM</p></div>
+
+    </div>
+
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+</div>
+</section>
+
+
+
+<!-- Add Money -->
+<section id="add">
+<div class="w-[400px] h-[30px] p-5 mx-auto mb-3 font-bold text-xl">Add Money</div>
+<form class="w-[370px] h-[400px] bg-white rounded-2xl mx-auto p-9">
+
+<h3 class="font-bold">Select a Bank</h3>
+<select class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-2 bg-[#f4f5f7] mb-2">
+  <option disabled selected>Select Bank</option>
+  <option>AB Bank</option>
+  <option>IFIC Bank</option>
+  <option>Dutch Bangla Bank</option>
+  <option>EXIM Bank</option>
+  <option>Islamia Bank</option>
+  <option>Shonali Bank</option>
+</select>
+
+
+<div>
+    <h3 class="font-bold">Account Number</h3>
+<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+
+<div>
+    <h3 class="font-bold">Enter Amount</h3>
+<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+
+<div>
+    <h3 class="font-bold">Your Pin</h3>
+    <input id="" type="password" placeholder="Enter 6 digit pin" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+<button id="" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Add Money</button>
+
+</form>
+</section>
+
+
+<!-- Cash Out -->
+<section id="out">
+<div class="w-[400px] h-[30px] p-5 mx-auto mb-3 font-bold text-xl">Cashout</div>
+<form class="w-[370px] h-[400px] bg-white rounded-2xl mx-auto p-9">
+
+<div>
+    <h3 class="font-bold">Agent Number</h3>
+<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+
+<div>
+    <h3 class="font-bold">Enter Amount</h3>
+<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+
+<div>
+    <h3 class="font-bold">Your Pin</h3>
+    <input id="" type="password" placeholder="Enter 6 digit pin" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+<button id="" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Withdraw</button>
+
+</form>
+</section>
+
+ <!-- Transfer Money -->
+<section id="transfer">
+<div class="w-[400px] h-[30px] p-5 mx-auto mb-3 font-bold text-xl">Transfer Money</div>
+<form class="w-[370px] h-[400px] bg-white rounded-2xl mx-auto p-9">
+
+<div>
+    <h3 class="font-bold">User Account Number</h3>
+<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+
+<div>
+    <h3 class="font-bold">Enter Amount</h3>
+<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+
+<div>
+    <h3 class="font-bold">Your Pin</h3>
+    <input id="" type="password" placeholder="Enter 6 digit pin" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+</div>
+<button id="" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Send</button>
+
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=""></script>
+</body>
+</html>
