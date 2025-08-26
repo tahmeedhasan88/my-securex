@@ -9,7 +9,7 @@ document.getElementById("login").addEventListener("click", function(e){
 
 
     if(mobileNumber===mobileValue && pinNumber===pinValue){
-       window.location.href="secondpg.html"
+       window.location.href="history.html"
     }
     else{
         alert("Invalid Recognization")
