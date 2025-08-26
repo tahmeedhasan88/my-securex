@@ -22,17 +22,17 @@
   />
 </head>
 <body class="h-[200vh] bg-[#f4f5f7]">
-    <nav class="w-[400px] h-[84px] mx-auto flex justify-between items-center bg-white p-6 border-b border-gray-300">
+    <nav class="w-[390px] h-[84px] mx-auto flex justify-between items-center bg-white p-6 border-b border-gray-300">
         <img class="w-[60px] h-[15px]" src="assets/secure.png">
         <div>
-            <h1 class="font-extrabold text-l">TK <span>10000</span></h1>
+            <h1 class="font-extrabold text-l">TK <span id="available-amount">10000</span></h1>
             <p>Available Balance</p>
         </div>
-        <button class="btn w-[85px]"><i class="fa-solid fa-right-from-bracket rotate-180"></i>Logout</button>
+        <button id="logout-btn" class="btn w-[85px]"><i class="fa-solid fa-right-from-bracket rotate-180"></i>Logout</button>
 
     </nav>
     
-<div class="w-[410px] mx-auto mt-6 p-5">
+<div class="w-[400px] mx-auto mt-6 p-5">
     <h1 class="animate__animated animate__bounce  text-2xl font-bold">Welcome to SecureX!</h1>
     <p>Enjoy easy and convenient financial services with us. Cashout charge is low and fast </p>
 </div>
@@ -74,12 +74,12 @@
 
 <!-- Latest Payment -->
 <section id="history">
-    <div class="w-[420px] h-[40px] mx-auto mt-5 flex justify-between items-center p-5"> 
+    <div class="w-[390px] h-[40px] mx-auto mt-5 flex justify-between items-center p-5"> 
     <h1 class="font-bold text-xl">Payment History</h1>
     <p class="text-[#44bd32]">View All</p>
 </div>
     
-<div class="w-[420px] h-[70px] bg-white mx-auto rounded-2xl flex items-center justify-between p-4">
+<div class="w-[390px] h-[70px] bg-white mx-auto rounded-2xl flex items-center justify-between p-4">
 
     <div class="flex gap-3 items-center p-2">
         <img class="w-[20px] h-[20px]" src="assets/wallet1.png">
@@ -92,7 +92,7 @@
     <i class="fa-solid fa-ellipsis-vertical"></i>
 </div>
 
-<div class="w-[420px] h-[70px] bg-white mx-auto rounded-2xl flex items-center justify-between p-4 mt-2">
+<div class="w-[390px] h-[70px] bg-white mx-auto rounded-2xl flex items-center justify-between p-4 mt-2">
 
     <div class="flex gap-3 items-center p-2">
         <img class="w-[20px] h-[20px]" src="assets/wallet1.png">
@@ -127,19 +127,19 @@
 
 <div>
     <h3 class="font-bold">Account Number</h3>
-<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+<input id="" type="text" placeholder="Enter Account Number" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
 
 <div>
     <h3 class="font-bold">Enter Amount</h3>
-<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+<input id="moneyadd" type="text" placeholder="Amount" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
 
 <div>
     <h3 class="font-bold">Your Pin</h3>
     <input id="" type="password" placeholder="Enter 6 digit pin" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
-<button id="" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Add Money</button>
+<button id="add-btn" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Add Money</button>
 
 </form>
 </section>
@@ -157,14 +157,14 @@
 
 <div>
     <h3 class="font-bold">Enter Amount</h3>
-<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+<input id="cashout-amount" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
 
 <div>
     <h3 class="font-bold">Your Pin</h3>
     <input id="" type="password" placeholder="Enter 6 digit pin" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
-<button id="" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Withdraw</button>
+<button id="cashout-btn" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Withdraw</button>
 
 </form>
 </section>
@@ -181,14 +181,14 @@
 
 <div>
     <h3 class="font-bold">Enter Amount</h3>
-<input id="" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
+<input id="transfer-amount" type="text" placeholder="Enter Your Name" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
 
 <div>
     <h3 class="font-bold">Your Pin</h3>
     <input id="" type="password" placeholder="Enter 6 digit pin" class="w-[300px] h-[40px] border-[#44bd32] rounded-2xl p-3 bg-[#f4f5f7] mb-2" />
 </div>
-<button id="" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Send</button>
+<button id="trnsfr-btn" class="h-[40px] rounded-2xl w-[300px] bg-[#44bd32] text-white mt-3">Send</button>
 
 </form>
 </section>
